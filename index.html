@@ -1,1 +1,475 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>John Hu | Portfolio</title>
+    <meta name="description" content="John Hu | Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="https://via.placeholder.com/32x32">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- site wrapper -->
+    <div class="site-wrapper">
+
+        <!-- mobile header -->
+        <div class="mobile-header py-2 px-3 mt-4">
+            <button class="menu-icon mr-2">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+            <a href="index.html" class="logo"></a>
+            <a href="index.html" class="site-title dot ml-2">JOHN HU</a>
+        </div>
+
+        <!-- header -->
+        <header class="left float-left" id="header">
+            <div class="header-inner d-flex align-items-start flex-column">
+                <a href="index.html"></a>
+                <a href="index.html" class="site-title dot mt-3">JOHN HU</a>
+                <span class="site-slogan">Web Developer</span>
+
+                <!-- navigation menu -->
+                <nav>
+                    <ul class="vertical-menu scrollspy">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#works">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- footer -->
+                <div class="footer mt-auto">
+
+                    <!-- social icons -->
+                    <ul class="social-icons list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="www.github.com/johnhu"><i class="fab fa-github"></i></a></li>
+                    </ul>
+
+                    <!-- copyright -->
+                    <span class="copyright">© 2020</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- main content area -->
+        <main class="content float-right">
+
+            <!-- section hero -->
+            <section class="hero background parallax shadow-dark d-flex align-items-center" id="home" data-image-src="assets/downtown-vancouver.jpg">
+                <div class="cta mx-auto mt-2">
+                    <h1 class="mt-0 mb-4">Hi, I’m John<span class="dot"></span></h1>
+                    <p class="mb-4">Front-end Web Developer and Designer based in Vancouver, BC. Open to new opportunities.</p>
+                    <a href="#works" class="btn btn-default btn-lg mr-3"><i class="icon-grid"></i>My Projects</a>
+                    <div class="spacer d-md-none d-lg-none d-sm-none" data-height="10"></div>
+                    <a href="#contact" class="btn btn-border-light btn-lg"><i class="icon-envelope"></i>Contact</a>
+                </div>
+                <div class="overlay"></div>
+            </section>
+
+            <!-- section about -->
+            <section id="about" class="shadow-blue white-bg padding">
+                <div class="mx-auto">
+                <h3 class="section-title">About Me</h3>
+                <div class="spacer" data-height="20"></div>
+                <div class="about-container">
+                    
+                <div class="about-text">
+                    <p class="m-2 p-2 card">Web Development Certificate at Seattle University. Aim to pursue new challenges in front-end software development.</p>
+                    <p class="m-2 p-2 card">Solid foundations in web UI Design using HTML, CSS, Bootstrap.</p>
+                    <p class="m-2 p-2 card">Proficient and up to date with development practices using JavaScript, frameworks (Vue JS), server-scripting, GitHub.</p>
+                    <p class="m-2 p-2 card">Creative and intuitive sense of visual design from graphic design experiences and Visual arts bachelor's degree.</p>
+                </div>
+                
+                <div class="avatar">
+                    <img src="assets/myAvatar3.svg" alt="John Hu">
+                </div>
+                </div>
+            </div>
+                </section>
+
+            <!-- section works -->
+            <section id="works" class="background parallax shadow-blue padding" data-image-src="assets/seattle-cityscape.jpg">
+                
+                <h3 class="section-title">Projects</h3>
+                <div class="spacer" data-height="20"></div>
+
+                <!-- portolio wrapper -->
+                <div class="row portfolio-wrapper">
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 mt-4 grid-item" data-toggle="modal" data-target="#portfolioModal0">
+                            <div class="portfolio-item">
+                                <div class="details">
+                                    <h4 class="title">Capstone</h4>
+                                    <span class="term"></span>
+                                </div>
+                                <span class="plus-icon">+</span>
+                                <div class="thumb">
+                                    <img src="assets/cabin.png" alt="Portfolio-title" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 mt-4 grid-item" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item">
+                                <div class="details">
+                                    <h4 class="title">Movie Search & Learn</h4>
+                                    <span class="term">Vue.js, APIs</span>
+                                </div>
+                                <span class="plus-icon">+</span>
+                                <div class="thumb">
+                                    <img src="assets/movie-search.png" alt="Portfolio-title" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 mt-4 grid-item" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item">
+                                <div class="details">
+                                    <h4 class="title">Checklist Creator</h4>
+                                    <span class="term">JavaScript</span>
+                                </div>
+                                <span class="plus-icon">+</span>
+                                <div class="thumb">
+                                    <img src="assets/checklistcreator.png" alt="Portfolio-title" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 mt-4 grid-item" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item">
+                                <div class="details">
+                                    <h4 class="title">Geronimo's Pizza</h4>
+                                    <span class="term">HTML, CSS, Bootstrap 4</span>
+                                </div>
+                                <span class="plus-icon">+</span>
+                                <div class="thumb">
+                                    <img src="assets/gs-pizza.png" alt="Portfolio-title" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 mt-4 grid-item" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item">
+                                <div class="details">
+                                    <h4 class="title">API SuperStore</h4>
+                                    <span class="term">HTML, CSS, Bootstrap 4</span>
+                                </div>
+                                <span class="plus-icon">+</span>
+                                <div class="thumb">
+                                    <img src="assets/api-superstore.png" alt="Portfolio-title" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 mt-4 grid-item" data-toggle="modal" data-target="#portfolioModal5">
+                            <div class="portfolio-item">
+                                <div class="details">
+                                    <h4 class="title">User Science Journal</h4>
+                                    <span class="term">Usability, Accessibility, Analytics</span>
+                                </div>
+                                <span class="plus-icon">+</span>
+                                <div class="thumb">
+                                    <img src="assets/user-sci.png" alt="Portfolio-title" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+                
+            </section>
+
+
+
+
+            <!-- section skills -->
+            <section id="skills" class="shadow-blue white-bg padding">
+                <h3 class="section-title">My skills</h3>
+                <div class="spacer" data-height="20"></div>
+                <div class="row mt-5">
+
+                    <div class="col-md-6">
+                        <!-- skill item -->
+                        <div class="skill-item">
+                            <div class="skill-info clearfix">
+                                <h4 class="float-left mb-3 mr-2 mt-0">Web Languages</h4>
+                                <span>HTML, CSS, JavaScript</span>
+                            </div>
+                            <div class="spacer" data-height="50"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- skill item -->
+                        <div class="skill-item">
+                            <div class="skill-info clearfix">
+                                <h4 class="float-left mb-3 mr-2 mt-0">Frameworks & Technologies</h4>
+                                <span>Vue.js, Bootstrap, RESTful APIs, Google Analytics, GitHub</span>
+                            </div>
+                            <div class="spacer" data-height="50"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- skill item -->
+                        <div class="skill-item">
+                            <div class="skill-info clearfix">
+                                <h4 class="float-left mb-3 mr-2 mt-0">Server and Back-end</h4>
+                                <span>Unix/Linux command line, Node.JS, Webpack</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- skill item -->
+                        <div class="skill-item">
+                            <div class="skill-info clearfix">
+                                <h4 class="float-left mb-3 mr-2 mt-0">Design</h4>
+                                <span>Adobe XD, Photoshop, Illustrator</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- section contact -->
+            <section id="contact" class="background shadow-blue parallax padding" data-image-src="assets/seattle-cityscape.jpg" >
+                <h3 class="section-title">Get in touch</h3>
+                <div class="spacer" data-height="20"></div>
+
+                <div class="row">
+
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <!-- contact info -->
+                        <div class="contact-info mb-5">
+                            <i class="icon-envelope"></i>
+                            <div class="details">
+                                <h5>Email address</h5>
+                                <span>johnhtj@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <i class="icon-location-pin"></i>
+                            <div class="details">
+                                <h5>Location</h5>
+                                <span>Vancouver, BC, Canada</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary mb-0">Capstone</h2>
+                                        <!-- Icon Divider-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/cabin.png" alt=""/>
+                                        <!-- Portfolio Modal - Text-->
+                                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary mb-0">Movie Search and Learn</h2>
+                                        <!-- Icon Divider-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Portfolio Modal - Image-->
+                                        <a href="http://www.johnhweb.com/movie-search/"><img class="img-fluid rounded mb-5" src="assets/movie-search.png" alt="Movie Search and Learn"/>
+                                        </a><!-- Portfolio Modal - Text-->
+                                        <p class="mb-5">A search engine for movies built with Vue.js, involving API
+                                            calls, routes, components, local caching.</p>
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal2Label" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary mb-0">Checklist Creator</h2>
+                                        <!-- Icon Divider-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Portfolio Modal - Image--><a href="http://www.johnhweb.com/checklist-creator/"><img class="img-fluid rounded mb-5" src="assets/checklistcreator.png" alt="Checklist Creator"/>
+                                        </a><!-- Portfolio Modal - Text-->
+                                        <p class="mb-5">A basic To-Do list app, which demonstrates DOM manipulation through Arrays and event listeners.</p>
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary mb-0">Geronimo's Pizza</h2>
+                                        <!-- Icon Divider-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Portfolio Modal - Image--><a href="http://www.johnhweb.com/geronimos-pizza"><img class="img-fluid rounded mb-5" src="assets/gs-pizza.png" alt="Geronimo's Pizza"/>
+                                        </a><!-- Portfolio Modal - Text-->
+                                        <p class="mb-5">Bootstrap 4 website for an imaginary pizza delivery service.</p>
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal4Label" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary mb-0">API SuperStore</h2>
+                                        <!-- Icon Divider-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Portfolio Modal - Image--><a href="https://www.johnhweb.com/wats3010-product-page"><img class="img-fluid rounded mb-5" src="assets/api-superstore.png" alt=""/>
+                                        </a><!-- Portfolio Modal - Text-->
+                                        <p class="mb-5">A Single-Page Product Site built with Bootstrap, HTML, CSS.</p>
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal5Label" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary mb-0">User Science Journal</h2>
+                                        <!-- Icon Divider-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Portfolio Modal - Image--><a href="https://www.johnhweb.com/user-sci-journal-jhu"><img class="img-fluid rounded mb-5" src="assets/user-sci.png" alt="User Science Journal"/>
+                                        </a><!-- Portfolio Modal - Text-->
+                                        <p class="mb-5">Reflections on Analytics, Accessibility, and Usability.</p>
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Go to top button -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
