@@ -6,7 +6,7 @@
     <title>John Hu | Portfolio</title>
     <meta name="description" content="John Hu | Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="https://via.placeholder.com/32x32">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png">
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
@@ -27,14 +27,20 @@
     <div class="site-wrapper">
 
         <!-- mobile header -->
-        <div class="mobile-header py-2 px-3 mt-4">
-            <button class="menu-icon mr-2">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
+        <div class="mobile-header pl-3 pb-2">
+              <a href="javascript:void(0);" class="icon" onclick="mobileToggle()">
+                <i class="fa fa-bars ml-2 mr-2"></i>
+              </a>
             <a href="index.html" class="logo"></a>
             <a href="index.html" class="site-title dot ml-2">JOHN HU</a>
+            <nav id="mobile-menu">
+                <ul id="menu-items" class="m-1">
+                <li><a href="#about" onclick="mobileToggle()">About</a></li>
+                <li><a href="#works" onclick="mobileToggle()">Projects</a></li>
+                <li><a href="#skills" onclick="mobileToggle()">Skills</a></li>
+                <li><a href="#contact" onclick="mobileToggle()">Contact</a></li>
+            </ul>
+        </nav>
         </div>
 
         <!-- header -->
@@ -61,7 +67,7 @@
                     <!-- social icons -->
                     <ul class="social-icons list-inline">
                         <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li class="list-inline-item"><a href="www.github.com/johnhu"><i class="fab fa-github"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.github.com/johnhu"><i class="fab fa-github"></i></a></li>
                     </ul>
 
                     <!-- copyright -->
@@ -100,7 +106,7 @@
                 </div>
                 
                 <div class="avatar">
-                    <img src="assets/myAvatar3.svg" alt="John Hu">
+                    <img src="assets/myAvatar2.png" alt="John Hu">
                 </div>
                 </div>
             </div>
@@ -139,7 +145,7 @@
                                 </div>
                                 <span class="plus-icon">+</span>
                                 <div class="thumb">
-                                    <img src="assets/movie-search.png" alt="Portfolio-title" />
+                                    <img src="assets/movie-search.png" alt="Movie Search and Learn" />
                                     <div class="mask"></div>
                                 </div>
                             </div>
@@ -154,7 +160,7 @@
                                 </div>
                                 <span class="plus-icon">+</span>
                                 <div class="thumb">
-                                    <img src="assets/checklistcreator.png" alt="Portfolio-title" />
+                                    <img src="assets/checklistcreator.png" alt="Checklist Creator" />
                                     <div class="mask"></div>
                                 </div>
                             </div>
@@ -169,7 +175,7 @@
                                 </div>
                                 <span class="plus-icon">+</span>
                                 <div class="thumb">
-                                    <img src="assets/gs-pizza.png" alt="Portfolio-title" />
+                                    <img src="assets/gs-pizza.png" alt="Geronimo's Pizza" />
                                     <div class="mask"></div>
                                 </div>
                             </div>
@@ -184,7 +190,7 @@
                                 </div>
                                 <span class="plus-icon">+</span>
                                 <div class="thumb">
-                                    <img src="assets/api-superstore.png" alt="Portfolio-title" />
+                                    <img src="assets/api-superstore.png" alt="API SuperStore" />
                                     <div class="mask"></div>
                                 </div>
                             </div>
@@ -199,7 +205,7 @@
                                 </div>
                                 <span class="plus-icon">+</span>
                                 <div class="thumb">
-                                    <img src="assets/user-sci.png" alt="Portfolio-title" />
+                                    <img src="assets/user-sci.png" alt="User Science Journal" />
                                     <div class="mask"></div>
                                 </div>
                             </div>
@@ -337,6 +343,7 @@
                                         <!-- Portfolio Modal - Image-->
                                         <a href="http://www.johnhweb.com/movie-search/"><img class="img-fluid rounded mb-5" src="assets/movie-search.png" alt="Movie Search and Learn"/>
                                         </a><!-- Portfolio Modal - Text-->
+                                        <a href="https://github.com/johnhu/movie-search" class="mb-3">Deployed Code</a>
                                         <p class="mb-5">A search engine for movies built with Vue.js, involving API
                                             calls, routes, components, local caching.</p>
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
@@ -365,6 +372,7 @@
                                         </div>
                                         <!-- Portfolio Modal - Image--><a href="http://www.johnhweb.com/checklist-creator/"><img class="img-fluid rounded mb-5" src="assets/checklistcreator.png" alt="Checklist Creator"/>
                                         </a><!-- Portfolio Modal - Text-->
+                                        <a href="https://github.com/johnhu/checklist-creator">Deployed Code</a>
                                         <p class="mb-5">A basic To-Do list app, which demonstrates DOM manipulation through Arrays and event listeners.</p>
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
@@ -392,6 +400,7 @@
                                         </div>
                                         <!-- Portfolio Modal - Image--><a href="http://www.johnhweb.com/geronimos-pizza"><img class="img-fluid rounded mb-5" src="assets/gs-pizza.png" alt="Geronimo's Pizza"/>
                                         </a><!-- Portfolio Modal - Text-->
+                                        <a href="https://github.com/johnhu/geronimos-pizza">Deployed Code</a>
                                         <p class="mb-5">Bootstrap 4 website for an imaginary pizza delivery service.</p>
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
@@ -417,8 +426,9 @@
                                             <div class="divider-custom-line"></div>
                                             <div class="divider-custom-line"></div>
                                         </div>
-                                        <!-- Portfolio Modal - Image--><a href="https://www.johnhweb.com/wats3010-product-page"><img class="img-fluid rounded mb-5" src="assets/api-superstore.png" alt=""/>
+                                        <!-- Portfolio Modal - Image--><a href="https://www.johnhweb.com/api-superstore"><img class="img-fluid rounded mb-5" src="assets/api-superstore.png" alt=""/>
                                         </a><!-- Portfolio Modal - Text-->
+                                        <a href="https://github.com/johnhu/api-superstore">Deployed Code</a>
                                         <p class="mb-5">A Single-Page Product Site built with Bootstrap, HTML, CSS.</p>
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
@@ -446,6 +456,7 @@
                                         </div>
                                         <!-- Portfolio Modal - Image--><a href="https://www.johnhweb.com/user-sci-journal-jhu"><img class="img-fluid rounded mb-5" src="assets/user-sci.png" alt="User Science Journal"/>
                                         </a><!-- Portfolio Modal - Text-->
+                                        <a href="https://github.com/johnhu/user-sci-journal-jhu">Deployed Code</a>
                                         <p class="mb-5">Reflections on Analytics, Accessibility, and Usability.</p>
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
@@ -464,11 +475,10 @@
 
     <!-- SCRIPTS -->
     <script src="js/jquery-1.12.3.min.js"></script>
-    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/slick.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        </script>
 
 </body>
 

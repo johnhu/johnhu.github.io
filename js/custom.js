@@ -1,178 +1,3 @@
-$(window).on("load", function() {
-    "use strict";
-
-    /*=========================================================================
-     Isotope
-     =========================================================================*/
-    $('.portfolio-filter').on('click', 'li', function() {
-        var filterValue = $(this).attr('data-filter');
-        $container.isotope({ filter: filterValue });
-    });
-
-    // change is-checked class on buttons
-    $('.portfolio-filter').each(function(i, buttonGroup) {
-        var $buttonGroup = $(buttonGroup);
-        $buttonGroup.on('click', 'li', function() {
-            $buttonGroup.find('.current').removeClass('current');
-            $(this).addClass('current');
-        });
-    });
-
-    var $container = $('.portfolio-wrapper');
-    $container.imagesLoaded(function() {
-        $('.portfolio-wrapper').isotope({
-            // options
-            itemSelector: '[class*="col-"]',
-            percentPosition: true,
-            masonry: {
-                // use element for option
-                columnWidth: '[class*="col-"]'
-            }
-        });
-    });
-
-    /*=========================================================================
-     Infinite Scroll
-     =========================================================================*/
-    var curPage = 1;
-    var pagesNum = $(".portfolio-pagination").find("li a:last").text(); // Number of pages
-
-    $container.infinitescroll({
-            itemSelector: '.grid-item',
-            nextSelector: '.portfolio-pagination li a',
-            navSelector: '.portfolio-pagination',
-            extraScrollPx: 0,
-            bufferPx: 0,
-            maxPage: 6,
-            loading: {
-                finishedMsg: "No more works",
-                msgText: '',
-                speed: 'slow',
-                selector: '.load-more',
-            },
-        },
-        // trigger Masonry as a callback
-        function(newElements) {
-
-            var $newElems = $(newElements);
-            $newElems.imagesLoaded(function() {
-                $newElems.animate({ opacity: 1 });
-                $container.isotope('appended', $newElems);
-            });
-
-            // Check last page
-            curPage++;
-            if (curPage == pagesNum) {
-                $('.load-more').remove();
-            }
-
-        });
-
-    $container.infinitescroll('unbind');
-
-    $('.load-more .btn').on('click', function() {
-        $container.infinitescroll('retrieve');
-        // display loading icon
-        $('.load-more .btn i').css('display', 'inline-block');
-        $('.load-more .btn i').addClass('fa-spin');
-
-        $(document).ajaxStop(function() {
-            setTimeout(function() {
-                // hide loading icon
-                $('.load-more .btn i').hide();
-            }, 1000);
-        });
-        return false;
-    });
-
-    /* ======= Mobile Filter ======= */
-
-    // bind filter on select change
-    $('.portfolio-filter-mobile').on('change', function() {
-        // get filter value from option value
-        var filterValue = this.value;
-        // use filterFn if matches value
-        filterValue = filterFns[filterValue] || filterValue;
-        $container.isotope({ filter: filterValue });
-    });
-
-    var filterFns = {
-        // show if number is greater than 50
-        numberGreaterThan50: function() {
-            var number = $(this).find('.number').text();
-            return parseInt(number, 10) > 50;
-        },
-        // show if name ends with -ium
-        ium: function() {
-            var name = $(this).find('.name').text();
-            return name.match(/ium$/);
-        }
-    };
-});
-
-/*=========================================================================
-            Carousels
-=========================================================================*/
-$(document).on('ready', function() {
-    "use strict";
-
-    $('.testimonials-wrapper').slick({
-        dots: true,
-        arrows: false,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                arrows: false,
-            }
-        }]
-    });
-
-    $('.clients-wrapper').slick({
-        dots: false,
-        arrows: false,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    dots: false,
-                    arrows: false,
-                }
-            },
-            {
-                breakpoint: 425,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: false,
-                    arrows: false,
-                }
-            }
-        ]
-    });
-
-});
-
-$(function() {
-    "use strict";
-
-    $('.menu-icon').on('click', function() {
-        $('header.left').toggleClass('open');
-        $('.mobile-header, main.content').toggleClass('push');
-    });
-
-    $('main.content, header.left button.close').on('click', function() {
-        $('header.left').removeClass('open');
-        $('.mobile-header, main.content').removeClass('push');
-    });
-
     /*=========================================================================
      One Page Scroll with jQuery
      =========================================================================*/
@@ -230,4 +55,15 @@ $(function() {
         }, 400);
     });
 
-});
+    /*=========================================================================
+            Mobile menu toggle
+    =========================================================================*/
+
+function mobileToggle() {
+    var x = document.getElementById("mobile-menu");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

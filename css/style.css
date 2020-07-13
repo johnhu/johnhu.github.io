@@ -37,7 +37,7 @@ html {
 }
 body {
     color: #888;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 1.7;
@@ -355,7 +355,6 @@ header .copyright {
 }
 
 .mobile-header {
-    color: blue;
     background: aliceblue;
     display: none;
     -webkit-transform: translateX(0);
@@ -389,33 +388,12 @@ header .copyright {
     width: 6px;
 }
 
-.mobile-header button.menu-icon {
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    vertical-align: middle;
-    padding: 0;
-}
-
-.mobile-header button.menu-icon span {
-    background: #003B7E;
-    border-radius: 10px;
-    display: block;
-    height: 4px;
-    width: 25px;
-}
-
-.mobile-header button.menu-icon span:nth-child(2) {
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
 .mobile-header a {
     color: #FFF;
 }
 
 .mobile-header a:hover {
+    color: #858585;
     text-decoration: none;
 }
 
@@ -426,6 +404,28 @@ header .copyright {
     -o-transform: translateX(295px);
     transform: translateX(295px);
   }
+
+.fa-bars {
+    color: #003B7E;
+}
+
+#mobile-menu{
+    display:none;
+}
+
+#menu-items >li{
+    list-style:none;
+    padding-top:10px;
+    font-size:1.1em;
+}
+
+#menu-items >li>a{
+    color: #003B7E;
+}
+
+#menu-items >li>a:hover{
+    color: #85858585;
+}
 
 main.content {
     width: 1175px;
@@ -1843,6 +1843,11 @@ section.padding-60 {
     }
     .mobile-header {
         display: block;
+        position:fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
     main.content {
         margin-top: 20px;
