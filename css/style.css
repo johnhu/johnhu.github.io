@@ -1388,8 +1388,6 @@ section.padding-60 {
     margin-left: 20px;
     }
 }
-
-
 @media (max-width: 1200px) and (min-width: 991px) {
     .site-wrapper {
         max-width: 970px;
@@ -1403,25 +1401,10 @@ section.padding-60 {
     .site-wrapper {
         width: 100%;
     }
-    header.left {
-        top: 25px;
-        float: none !important;
-        -webkit-transform: translateX(-380px);
-        -moz-transform: translateX(-380px);
-        -ms-transform: translateX(-380px);
-        -o-transform: translateX(-380px);
-        transform: translateX(-380px);
-    }
-    header.left.open {
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-        transform: translateX(0);
-    }
-    header.left button.close {
-        display: block;
-    }
+    .parallax, .parallax-2 {
+    background-attachment: unset !important;
+    background-position: center top !important;
+     }
     .mobile-header {
         display: block;
         position:fixed;
