@@ -80,47 +80,41 @@
         <main class="content float-right">
 
             <!-- section hero -->
-            <section class="hero background parallax shadow-dark d-flex align-items-center" id="home" data-image-src="assets/downtown-vancouver.jpg">
+            <section class="hero d-flex align-items-center parallax" id="home">
                 <div class="cta mx-auto mt-2">
                     <h1 class="mt-0 mb-4">Hi, I’m John<span class="dot"></span></h1>
                     <p class="mb-4">Front-end Web Developer and Designer based in Vancouver, BC. Open to new opportunities.</p>
-                    <a href="#works" class="btn btn-default btn-lg mr-3"><i class="icon-grid"></i>My Projects</a>
-                    <div class="spacer d-md-none d-lg-none d-sm-none" data-height="10"></div>
+                    <a href="#works" class="btn btn-default btn-lg mr-3" id="projects-btn"><i class="icon-grid"></i>My Projects</a>
                     <a href="#contact" class="btn btn-border-light btn-lg"><i class="icon-envelope"></i>Contact</a>
                 </div>
                 <div class="overlay"></div>
             </section>
 
             <!-- section about -->
-            <section id="about" class="shadow-blue white-bg padding">
-                <div class="mx-auto">
-                <h3 class="section-title">About Me</h3>
-                <div class="spacer" data-height="20"></div>
+            <section class="padding d-flex parallax-2" id="about" >
+                <div class="about-wrapper mx-auto">
+                <h3 class="section-title mb-5">About Me</h3>
                 <div class="about-container">
-                    
                 <div class="about-text">
-                    <p class="m-2 p-2 card">Web Development Certificate at Seattle University. Aim to pursue new challenges in front-end software development.</p>
-                    <p class="m-2 p-2 card">Solid foundations in web UI Design using HTML, CSS, Bootstrap.</p>
-                    <p class="m-2 p-2 card">Proficient and up to date with development practices using JavaScript, frameworks (Vue JS), server-scripting, GitHub.</p>
-                    <p class="m-2 p-2 card">Creative and intuitive sense of visual design from graphic design experiences and Visual arts bachelor's degree.</p>
+                <p class="m-2 p-2 card">Web Development Certificate at Seattle University. Aim to pursue new challenges in front-end software development.</p>
+                <p class="m-2 p-2 card">Solid foundations in web UI Design using HTML, CSS, Bootstrap.</p>
+                <p class="m-2 p-2 card">Proficient and up to date with development practices using JavaScript, frameworks (Vue JS), server-scripting, GitHub.</p>
+                <p class="m-2 p-2 card">Creative and intuitive sense of visual design from graphic design experiences and Visual arts bachelor's degree.</p>
                 </div>
-                
                 <div class="avatar">
-                    <img src="assets/myAvatar2.png" alt="John Hu">
+                <img src="assets/myAvatar2.png" alt="John Hu">
                 </div>
-                </div>
-            </div>
+                </div></div>
+            <div class="white-bg"></div>
                 </section>
 
             <!-- section works -->
-            <section id="works" class="background parallax shadow-blue padding" data-image-src="assets/seattle-cityscape.jpg">
-                
-                <h3 class="section-title">Projects</h3>
-                <div class="spacer" data-height="20"></div>
+            <section id="works" class="padding d-flex parallax">
+                <div class="works-wrapper mx-auto">
+                <h3 class="section-title mb-4">Projects</h3>
 
                 <!-- portolio wrapper -->
                 <div class="row portfolio-wrapper">
-
                     <!-- portfolio item -->
                     <div class="col-md-4 col-sm-6 mt-4 grid-item" data-toggle="modal" data-target="#portfolioModal0">
                             <div class="portfolio-item">
@@ -128,10 +122,10 @@
                                     <h4 class="title">Capstone</h4>
                                     <span class="term"></span>
                                 </div>
-                                <span class="plus-icon">+</span>
                                 <div class="thumb">
-                                    <img src="assets/cabin.png" alt="Portfolio-title" />
-                                    <div class="mask"></div>
+                                    <img src="assets/cabin.png" alt="Capstone" />
+                                    <div class="mask">
+                                        <span class="zoom-icon"><i class="fa fa-search-plus fa-8x"></i></span></div>
                                 </div>
                             </div>
                     </div>
@@ -143,10 +137,9 @@
                                     <h4 class="title">Movie Search & Learn</h4>
                                     <span class="term">Vue.js, APIs</span>
                                 </div>
-                                <span class="plus-icon">+</span>
                                 <div class="thumb">
                                     <img src="assets/movie-search.png" alt="Movie Search and Learn" />
-                                    <div class="mask"></div>
+                                    <div class="mask"><span class="zoom-icon"><i class="fa fa-search-plus fa-8x"></i></span></div>
                                 </div>
                             </div>
                     </div>
@@ -158,10 +151,9 @@
                                     <h4 class="title">Checklist Creator</h4>
                                     <span class="term">JavaScript</span>
                                 </div>
-                                <span class="plus-icon">+</span>
                                 <div class="thumb">
                                     <img src="assets/checklistcreator.png" alt="Checklist Creator" />
-                                    <div class="mask"></div>
+                                    <div class="mask"><span class="zoom-icon"><i class="fa fa-search-plus fa-8x"></i></span></div>
                                 </div>
                             </div>
                     </div>
@@ -173,10 +165,9 @@
                                     <h4 class="title">Geronimo's Pizza</h4>
                                     <span class="term">HTML, CSS, Bootstrap 4</span>
                                 </div>
-                                <span class="plus-icon">+</span>
                                 <div class="thumb">
                                     <img src="assets/gs-pizza.png" alt="Geronimo's Pizza" />
-                                    <div class="mask"></div>
+                                    <div class="mask"><span class="zoom-icon"><i class="fa fa-search-plus fa-8x"></i></span></div>
                                 </div>
                             </div>
                     </div>
@@ -188,10 +179,9 @@
                                     <h4 class="title">API SuperStore</h4>
                                     <span class="term">HTML, CSS, Bootstrap 4</span>
                                 </div>
-                                <span class="plus-icon">+</span>
                                 <div class="thumb">
                                     <img src="assets/api-superstore.png" alt="API SuperStore" />
-                                    <div class="mask"></div>
+                                    <div class="mask"><span class="zoom-icon"><i class="fa fa-search-plus fa-8x"></i></span></div>
                                 </div>
                             </div>
                     </div>
@@ -203,77 +193,68 @@
                                     <h4 class="title">User Science Journal</h4>
                                     <span class="term">Usability, Accessibility, Analytics</span>
                                 </div>
-                                <span class="plus-icon">+</span>
                                 <div class="thumb">
                                     <img src="assets/user-sci.png" alt="User Science Journal" />
-                                    <div class="mask"></div>
+                                    <div class="mask"><span class="zoom-icon"><i class="fa fa-search-plus fa-8x"></i></span></div>
                                 </div>
                             </div>
                     </div>
 
                 </div>
+            </div>
                 
+            <div class="overlay"></div>
             </section>
 
 
 
 
             <!-- section skills -->
-            <section id="skills" class="shadow-blue white-bg padding">
-                <h3 class="section-title">My skills</h3>
-                <div class="spacer" data-height="20"></div>
-                <div class="row mt-5">
-
-                    <div class="col-md-6">
-                        <!-- skill item -->
-                        <div class="skill-item">
-                            <div class="skill-info clearfix">
-                                <h4 class="float-left mb-3 mr-2 mt-0">Web Languages</h4>
-                                <span>HTML, CSS, JavaScript</span>
-                            </div>
-                            <div class="spacer" data-height="50"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <!-- skill item -->
-                        <div class="skill-item">
-                            <div class="skill-info clearfix">
-                                <h4 class="float-left mb-3 mr-2 mt-0">Frameworks & Technologies</h4>
-                                <span>Vue.js, Bootstrap, RESTful APIs, Google Analytics, GitHub</span>
-                            </div>
-                            <div class="spacer" data-height="50"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <!-- skill item -->
-                        <div class="skill-item">
-                            <div class="skill-info clearfix">
-                                <h4 class="float-left mb-3 mr-2 mt-0">Server and Back-end</h4>
-                                <span>Unix/Linux command line, Node.JS, Webpack</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <!-- skill item -->
-                        <div class="skill-item">
-                            <div class="skill-info clearfix">
-                                <h4 class="float-left mb-3 mr-2 mt-0">Design</h4>
-                                <span>Adobe XD, Photoshop, Illustrator</span>
-                            </div>
-                        </div>
-                    </div>
-
+            <section id="skills" class="padding d-flex parallax-2">
+                <div class="skills-wrapper mx-auto">
+                <h3 class="section-title mb-5">My skills</h3>
+                <div class="row mt-3">
+                
+                <div class="col-md-6">
+                <!-- skill item -->
+                <div class="skill-item mb-4">
+                <h4 class="row mb-3">Web Languages</h4>
+                <span>HTML, CSS, JavaScript</span>
                 </div>
+                </div>
+                
+                <div class="col-md-6">
+                <!-- skill item -->
+                <div class="skill-item mb-4">
+                <h4 class="row mb-3">Frameworks & Technologies</h4>
+                <span>Vue.js, Bootstrap, RESTful APIs, Google Analytics, GitHub</span>
+                </div>
+                </div>
+                
+                <div class="col-md-6">
+                <!-- skill item -->
+                <div class="skill-item mb-4">
+                <h4 class="row mb-3">Server and Back-end</h4>
+                <span>Unix/Linux command line, Node.JS, Webpack</span>
+                </div>
+                </div>
+                
+                <div class="col-md-6">
+                <!-- skill item -->
+                <div class="skill-item">
+                <h4 class="row mb-3">Design</h4>
+                <span>Adobe XD, Photoshop, Illustrator</span>
+                </div>
+                </div>
+                
+                </div></div>
+                <div class="white-bg"></div>
             </section>
 
             <!-- section contact -->
-            <section id="contact" class="background shadow-blue parallax padding" data-image-src="assets/seattle-cityscape.jpg" >
-                <h3 class="section-title">Get in touch</h3>
-                <div class="spacer" data-height="20"></div>
-
+            <section id="contact" class="parallax d-flex padding">
+                <div class="contact-wrapper">
+                <h3 class="section-title mb-5">Get in touch</h3>
                 <div class="row">
 
                     <div class="col-md-4 mb-4 mb-md-0">
@@ -296,178 +277,166 @@
                     </div>
 
                 </div>
+            <div class="overlay"></div>
             </section>
             
-            <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-0">Capstone</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/cabin.png" alt=""/>
-                                        <!-- Portfolio Modal - Text-->
-                                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-0">Movie Search and Learn</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image-->
-                                        <a href="http://www.johnhweb.com/movie-search/"><img class="img-fluid rounded mb-5" src="assets/movie-search.png" alt="Movie Search and Learn"/>
-                                        </a><!-- Portfolio Modal - Text-->
-                                        <a href="https://github.com/johnhu/movie-search" class="mb-3">Deployed Code</a>
-                                        <p class="mb-5">A search engine for movies built with Vue.js, involving API
-                                            calls, routes, components, local caching.</p>
-                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal2Label" aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-0">Checklist Creator</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image--><a href="http://www.johnhweb.com/checklist-creator/"><img class="img-fluid rounded mb-5" src="assets/checklistcreator.png" alt="Checklist Creator"/>
-                                        </a><!-- Portfolio Modal - Text-->
-                                        <a href="https://github.com/johnhu/checklist-creator">Deployed Code</a>
-                                        <p class="mb-5">A basic To-Do list app, which demonstrates DOM manipulation through Arrays and event listeners.</p>
-                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-0">Geronimo's Pizza</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image--><a href="http://www.johnhweb.com/geronimos-pizza"><img class="img-fluid rounded mb-5" src="assets/gs-pizza.png" alt="Geronimo's Pizza"/>
-                                        </a><!-- Portfolio Modal - Text-->
-                                        <a href="https://github.com/johnhu/geronimos-pizza">Deployed Code</a>
-                                        <p class="mb-5">Bootstrap 4 website for an imaginary pizza delivery service.</p>
-                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal4Label" aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-0">API SuperStore</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image--><a href="https://www.johnhweb.com/api-superstore"><img class="img-fluid rounded mb-5" src="assets/api-superstore.png" alt=""/>
-                                        </a><!-- Portfolio Modal - Text-->
-                                        <a href="https://github.com/johnhu/api-superstore">Deployed Code</a>
-                                        <p class="mb-5">A Single-Page Product Site built with Bootstrap, HTML, CSS.</p>
-                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal5Label" aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-0">User Science Journal</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image--><a href="https://www.johnhweb.com/user-sci-journal-jhu"><img class="img-fluid rounded mb-5" src="assets/user-sci.png" alt="User Science Journal"/>
-                                        </a><!-- Portfolio Modal - Text-->
-                                        <a href="https://github.com/johnhu/user-sci-journal-jhu">Deployed Code</a>
-                                        <p class="mb-5">Reflections on Analytics, Accessibility, and Usability.</p>
-                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
 
+        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title">Capstone</h2>
+                                    <!-- Icon Divider-->
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/cabin.png" alt=""/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <div class="mb-5">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil,
+                                         molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, 
+                                         eos quod consequuntur itaque. Nam.</p><a href=""><u>Deployed Code</u></a></div>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title">Movie Search and Learn</h2>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="http://www.johnhweb.com/movie-search/"><img class="img-fluid mt-4 mb-4" src="assets/movie-search.png" alt="Movie Search and Learn"/>
+                                    </a><!-- Portfolio Modal - Text--><div class="mb-5">
+                                    <p>A search engine for movies built with Vue.js, involving API
+                                    calls, routes, components, local caching.</p>
+                                    <a href="www.johnhweb.com/movie-search"><u>Live Site</u></a>
+                                    <a href="https://github.com/johnhu/movie-search" class="ml-2"><u>Deployed Code</u></a></div>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title">Checklist Creator</h2>
+                                    <!-- Icon Divider-->
+                                    <!-- Portfolio Modal - Image--><a href="http://www.johnhweb.com/checklist-creator/"><img class="img-fluid mt-4 mb-4" src="assets/checklistcreator.png" alt="Checklist Creator"/>
+                                    </a><!-- Portfolio Modal - Text--><div class="mb-5">
+                                    <p>A basic To-Do list app that demonstrates DOM manipulation through Arrays and event listeners.</p>
+                                    <a href="http://www.johnhweb.com/checklist-creator/"><u>Live Site</u></a>
+                                    <a href="https://github.com/johnhu/checklist-creator" class="ml-2"><u>Deployed Code</u></a></div>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title">Geronimo's Pizza</h2>
+                                    <!-- Icon Divider-->
+                                    <!-- Portfolio Modal - Image--><a href="http://www.johnhweb.com/geronimos-pizza">
+                                        <img class="img-fluid mt-4 mb-4" src="assets/gs-pizza.png" alt="Geronimo's Pizza"/>
+                                    </a><!-- Portfolio Modal - Text--><div class="mb-5">
+                                    <p>Bootstrap 4 website for an imaginary pizza delivery service.</p>
+                                    <a href="johnhweb.com/geronimos-pizza"><u>Live Site</u></a>
+                                    <a href="https://github.com/johnhu/geronimos-pizza" class="ml-2"><u>Deployed Code</u></a></div>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title">API SuperStore</h2>
+                                    <!-- Icon Divider-->
+                                    <!-- Portfolio Modal - Image--><a href="https://www.johnhweb.com/api-superstore">
+                                        <img class="img-fluid mt-4 mb-4" src="assets/api-superstore.png" alt=""/>
+                                    </a><!-- Portfolio Modal - Text--><div class="mb-5">
+                                    <p>A Single-Page Product Site built with Bootstrap, HTML, CSS.</p>
+                                    <a href="https://www.johnhweb.com/api-superstore"><u>Live Site</u></a>
+                                    <a href="https://github.com/johnhu/api-superstore" class="ml-2"><u>Deployed Code</u></a></div>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title">User Science Journal</h2>
+                                    <!-- Icon Divider-->
+                                    <!-- Portfolio Modal - Image--><a href="https://www.johnhweb.com/user-sci-journal-jhu">
+                                        <img class="img-fluid mt-4 mb-4" src="assets/user-sci.png" alt="User Science Journal"/>
+                                    </a><!-- Portfolio Modal - Text-->
+                                    <div class="mb-5">
+                                    <p>Reflections on Analytics, Accessibility, and Usability.</p>
+                                    <a href="https://www.johnhweb.com/user-sci-journal-jhu"><u>Live Site</u></a>
+                                    <a href="https://github.com/johnhu/user-sci-journal-jhu" class="ml-2"><u>Deployed Code</u></a></div>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Go to top button -->

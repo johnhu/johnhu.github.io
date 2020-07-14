@@ -28,17 +28,6 @@
         var src = bg_img[i].getAttribute('data-image-src');
         bg_img[i].style.backgroundImage = "url('" + src + "')";
     }
-
-    /*=========================================================================
-     Spacer with Data Attribute
-     =========================================================================*/
-    var list = document.getElementsByClassName('spacer');
-
-    for (var i = 0; i < list.length; i++) {
-        var size = list[i].getAttribute('data-height');
-        list[i].style.height = "" + size + "px";
-    }
-
     /*=========================================================================
             Scroll to Top
     =========================================================================*/
