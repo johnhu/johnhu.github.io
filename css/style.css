@@ -646,6 +646,7 @@ section.padding-60 {
     display:flex;
     justify-content:center;
     align-items:center;
+    width: 99px;
 }
 
 .portfolio-item .mask {
@@ -1020,6 +1021,12 @@ section.padding-60 {
     margin: 0 0 5px;
 }
 
+.contact-info .iconify {
+    color: #FF5959;
+    position: absolute;
+    width: 24px; 
+    height: 24px; 
+}
 
 /*=================================================================*/
 
@@ -1049,23 +1056,6 @@ section.padding-60 {
     height: 100%;
     position: absolute;
     width: 100%;
-}
-
-.icon-circle {
-    font-size: 24px;
-    color: aliceblue;
-    display: inline-block;
-    background: #FF5959;
-    border-radius: 50%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    width: 50px;
-}
-
-.icon-simple {
-    color: #FF5959;
-    font-size: 24px;
 }
 
 #infscr-loading {
@@ -1174,7 +1164,7 @@ section.padding-60 {
 
 .btn-group-lg>.btn,
 .btn-lg {
-    padding: 12px 26px;
+    padding: 12px 20px;
     font-size: 16px;
 }
 
