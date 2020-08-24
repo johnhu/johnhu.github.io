@@ -97,10 +97,10 @@
                 <h3 class="section-title mb-5">About Me</h3>
                 <div class="about-container">
                 <div class="about-text">
-                <p class="m-2 p-2 card">Web Development Certificate at Seattle University. Aim to pursue new challenges in front-end software development.</p>
-                <p class="m-2 p-2 card">Solid foundations in web UI Design using HTML, CSS, Bootstrap.</p>
-                <p class="m-2 p-2 card">Proficient and up to date with development practices using JavaScript, frameworks (Vue JS), server-scripting, GitHub.</p>
-                <p class="m-2 p-2 card">Creative and intuitive sense of visual design from graphic design experiences and Visual arts bachelor's degree.</p>
+                <p class="mb-3 p-2 card">Web Development Certificate at Seattle University. Aim to pursue new challenges in front-end software development.</p>
+                <p class="mb-3 p-2 card">Solid foundations in web UI Design using HTML, CSS, Bootstrap.</p>
+                <p class="mb-3 p-2 card">Proficient and up to date with development practices using JavaScript, frameworks (Vue JS), server-scripting, GitHub.</p>
+                <p class="mb-3 p-2 card">Creative and intuitive sense of visual design from graphic design experiences and Visual arts bachelor's degree.</p>
                 </div>
                 <div class="avatar">
                 <img src="assets/myAvatar2.png" alt="John Hu">
@@ -218,7 +218,7 @@
                 
                 <div class="col-md-6">
                 <!-- skill item -->
-                <div class="skill-item mb-4">
+                <div class="skill-item mb-5">
                 <h4 class="row mb-3">Web Languages</h4>
                 <span>HTML, CSS, JavaScript</span>
                 </div>
@@ -226,7 +226,7 @@
                 
                 <div class="col-md-6">
                 <!-- skill item -->
-                <div class="skill-item mb-4">
+                <div class="skill-item mb-5">
                 <h4 class="row mb-3">Frameworks & Technologies</h4>
                 <span>Vue.js, Bootstrap, RESTful APIs, Google Analytics, GitHub</span>
                 </div>
@@ -274,6 +274,51 @@
                                 <span>Vancouver, BC, Canada</span>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-7">
+                        <!-- Contact Form -->
+                        <form id="contact-form" class="contact-form" method="post" action="form/contact.php">
+                            
+                            <div class="messages"></div>
+                            
+                            <div class="row">
+                                <div class="column col-md-6">
+                                    <!-- Name input -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Your name" required="required" data-error="Name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="column col-md-6">
+                                    <!-- Email input -->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email address" required="required" data-error="Email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+    
+                                <div class="column col-md-12">
+                                    <!-- Email input -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="InputSubject" name="InputSubject" placeholder="Subject" required="required" data-error="Subject is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                        
+                                <div class="column col-md-12">
+                                    <!-- Message textarea -->
+                                    <div class="form-group">
+                                        <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Message" required="required" data-error="Message is required."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default"><i class="icon-paper-plane"></i>Send Message</button><!-- Send Button -->
+    
+                        </form>
+                        <!-- Contact Form end -->
                     </div>
                     </div>
 
